@@ -1,11 +1,513 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Contact</title>
-</head>
-<body>
-    <h2>Contact me</h2>
-    <h3>This page is for contact me !!!</h3>
-</body>
-</html>
+{% extends '_base.html' %}
+{% load static %}
+
+{% block title %}
+    ContactPage
+{% endblock %}
+{% block content %}
+    <div class="mil-content">
+        <div class="mil-overlay"></div>
+        <div class="mil-left-part">
+            <div class="transition-fade" id="swupMain">
+                <!-- contact -->
+                <div class="mil-content-frame mil-contact-frame">
+                    <div class="mil-scroll mil-bp-fix-2 mil-half-1">
+                        <div class="mil-main-content">
+                            <div class="mil-banner">
+                                <div class="mil-bg-frame">
+                                    <img src="{% static 'img/img-light/ui/banner.png' %}" alt="banner"
+                                         class="mil-banner-bg mil-scale-img" data-value-1="1" data-value-2="1.3">
+                                </div>
+                                <div class="mil-banner-overlay"></div>
+                                <div class="mil-banner-content mil-type-2">
+                                    <div class="mil-link mil-mb-20"><h1>ارتباط با من</h1></div>
+                                </div>
+                            </div>
+                            <div class="mil-space-90 mil-p-0-75">
+                                <form>
+                                    <div class="row mil-aic">
+                                        <div class="col-sm-6 mil-mb-15">
+                                            <div class="mil-input-frame mil-up">
+                                                <input type="text" placeholder="نام شما" name="name">
+                                                <i class="fal fa-user"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 mil-mb-15">
+                                            <div class="mil-input-frame mil-up">
+                                                <input type="email" placeholder="ایمیل" name="email">
+                                                <i class="fal fa-at"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 mil-mb-15">
+                                            <div class="mil-input-frame mil-up">
+                                                <input type="text" placeholder="موضوع" name="subject">
+                                                <i class="fal fa-lightbulb"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 mil-mb-15">
+                                            <div class="mil-input-frame mil-up">
+                                                <textarea placeholder="پیام شما" name="message"></textarea>
+                                                <i class="fal fa-user"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-8 col-md-8 mil-mb-15">
+                                            <label class="custom-checkbox mil-up">
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                                با پردازش داده‌های شخصی خود موافقت می‌کنم.
+                                            </label>
+                                        </div>
+                                        <div class="col-12 col-sm-4 mil-mb-15 mil-jce mil-xs-jcs mil-up">
+                                            <button type="submit" class="mil-btn-sm">ارسال</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mil-bottom-panel">
+                        <div class="mil-space-90">
+                            <div class="mil-jcb mil-w-100">
+                                <a href="https://wa.me/+989920210730" class="mil-icon-text" data-no-swup target="_blank">
+                                    <i class="fab fa-whatsapp"></i>
+                                    <div class="mil-link" dir="ltr">+98 9920210730</div>
+                                </a>
+                                <a href="https://m13d77i@gmail.com" class="mil-icon-text" data-no-swup target="_blank">
+                                    <i class="fal fa-at"></i>
+                                    <div class="mil-link">archer@eltheme.ir</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- contact end -->
+            </div>
+        </div>
+        <div class="mil-right-part">
+            <!-- cv -->
+            <div class="mil-content-frame mil-cloned">
+                <div class="mil-scroll mil-half-2">
+                    <div class="mil-main-content">
+                        <div class="mil-banner">
+                            <div class="mil-bg-frame">
+                                <img src="{% static 'img/img-light/ui/banner.png' %}" alt="banner"
+                                     class="mil-banner-bg mil-scale-img" data-value-1="1" data-value-2="1.3">
+                            </div>
+                            <div class="mil-banner-overlay"></div>
+                            <div class="mil-banner-content">
+                                <div class="mil-avatar mil-mb-30">
+                                    <img src="{% static 'img/img-light/ui/avatar.jpg' %}" alt="avatar">
+                                </div>
+                                <h1 class="mil-mb-15">وندی آرچر</h1>
+                                <div class="mil-link">من یک <span class="mil-typing">طراح</span></div>
+                            </div>
+                        </div>
+                        <div class="mil-space-90 mil-p-0-75">
+                            <div class="mil-title-line mil-mb-60 mil-up">
+                                <h2>خدمات</h2>
+                                <div class="mil-line"></div>
+                                <div class="mil-h2 mil-number">01</div>
+                            </div>
+                            <div class="row mil-mb-75">
+                                <div class="col-xs-12 col-sm-6 mil-mb-15">
+                                    <div class="mil-service-card mil-up">
+                                        <h3 class="mil-mb-20"><span class="mil-accent">01.</span> طراح UI/UX</h3>
+                                        <p class="mil-mb-20-plus">من رابط‌های کاربری شهودی طراحی می‌کنم که از اولین کلیک
+                                            مخاطب را جذب می‌کنند. بهینه‌سازی تجربه کاربری برای دستیابی به حداکثر
+                                            تأثیر.</p>
+                                        <a href="contact-light.html" class="mil-link mil-hover-link">سفارش خدمات</a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 mil-mb-15">
+                                    <div class="mil-service-card mil-up">
+                                        <h3 class="mil-mb-20"><span class="mil-accent">02.</span> توسعه وب</h3>
+                                        <p class="mil-mb-20-plus">من وب‌سایت‌های مدرن و با عملکرد بالا را با استفاده از
+                                            آخرین تکنولوژی‌ها می‌سازم. پایداری و واکنش‌گرایی در تمام دستگاه‌ها تضمین شده
+                                            است.</p>
+                                        <a href="contact-light.html" class="mil-link mil-hover-link">سفارش خدمات</a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 mil-mb-15">
+                                    <div class="mil-service-card mil-up">
+                                        <h3 class="mil-mb-20"><span class="mil-accent">03.</span> طراحی گرافیک</h3>
+                                        <p class="mil-mb-20-plus">من راه‌حل‌های بصری جذابی ایجاد می‌کنم که
+                                            بازتاب‌دهنده‌ی منحصر به فرد بودن برند شما هستند. از طراحی‌ها تا کتابچه‌های
+                                            برند، همه در یک سبک.</p>
+                                        <a href="contact-light.html" class="mil-link mil-hover-link">سفارش خدمات</a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 mil-mb-15">
+                                    <div class="mil-service-card mil-up">
+                                        <h3 class="mil-mb-20"><span class="mil-accent">04.</span> بازاریابی</h3>
+                                        <p class="mil-mb-20-plus">من استراتژی‌هایی توسعه می‌دهم که به مخاطبان شما
+                                            می‌رسند و شناخت برند را در کانال‌های دیجیتال و سنتی تقویت می‌کنند.</p>
+                                        <a href="contact-light.html" class="mil-link mil-hover-link">سفارش خدمات</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mil-title-line mil-mb-60 mil-up">
+                                <h2>زبان</h2>
+                                <div class="mil-line"></div>
+                                <div class="mil-h2 mil-number">02</div>
+                            </div>
+                            <div class="row mil-mb-60">
+                                <div class="col-xs-12 col-sm-6 mil-mb-30">
+                                    <div class="mil-skill-item mil-up">
+                                        <div class="mil-top">
+                                            <span class="mil-link">فرانسوی</span>
+                                            <span>بومی</span>
+                                        </div>
+                                        <div class="mil-progress">
+                                            <div class="mil-progress-prog mil-add-class" data-size="100%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 mil-mb-30">
+                                    <div class="mil-skill-item mil-up">
+                                        <div class="mil-top">
+                                            <span class="mil-link">انگلیسی</span>
+                                            <span>75%</span>
+                                        </div>
+                                        <div class="mil-progress">
+                                            <div class="mil-progress-prog mil-add-class" data-size="75%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mil-title-line mil-mb-60 mil-up">
+                                <h2>مهارت‌ها</h2>
+                                <div class="mil-line"></div>
+                                <div class="mil-h2 mil-number">03</div>
+                            </div>
+                            <div class="row mil-mb-60">
+                                <div class="col-xs-12 col-sm-6 mil-mb-30">
+                                    <div class="mil-skill-item mil-up">
+                                        <div class="mil-top">
+                                            <span class="mil-link">فیگما</span>
+                                            <span>90%</span>
+                                        </div>
+                                        <div class="mil-progress">
+                                            <div class="mil-progress-prog mil-add-class" data-size="90%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 mil-mb-30">
+                                    <div class="mil-skill-item mil-up">
+                                        <div class="mil-top">
+                                            <span class="mil-link">اچ‌تی‌ام‌ال</span>
+                                            <span>80%</span>
+                                        </div>
+                                        <div class="mil-progress">
+                                            <div class="mil-progress-prog mil-add-class" data-size="80%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 mil-mb-30">
+                                    <div class="mil-skill-item mil-up">
+                                        <div class="mil-top">
+                                            <span class="mil-link">فتوشاپ</span>
+                                            <span>75%</span>
+                                        </div>
+                                        <div class="mil-progress">
+                                            <div class="mil-progress-prog mil-add-class" data-size="75%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 mil-mb-30">
+                                    <div class="mil-skill-item mil-up">
+                                        <div class="mil-top">
+                                            <span class="mil-link">Css / scss</span>
+                                            <span>95%</span>
+                                        </div>
+                                        <div class="mil-progress">
+                                            <div class="mil-progress-prog mil-add-class" data-size="95%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 mil-mb-30">
+                                    <div class="mil-skill-item mil-up">
+                                        <div class="mil-top">
+                                            <span class="mil-link">ادوبی ایکس‌دی</span>
+                                            <span>80%</span>
+                                        </div>
+                                        <div class="mil-progress">
+                                            <div class="mil-progress-prog mil-add-class" data-size="80%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 mil-mb-30">
+                                    <div class="mil-skill-item mil-up">
+                                        <div class="mil-top">
+                                            <span class="mil-link">Js / React</span>
+                                            <span>60%</span>
+                                        </div>
+                                        <div class="mil-progress">
+                                            <div class="mil-progress-prog mil-add-class" data-size="60%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mil-title-line mil-mb-60 mil-up">
+                                <h2>نظرات</h2>
+                                <div class="mil-line"></div>
+                                <div class="mil-h2 mil-number">04</div>
+                            </div>
+                            <div class="swiper-container mil-reviews-slider mil-mb-30 mil-up">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="mil-review-card" data-swiper-parallax="-90"
+                                             data-swiper-parallax-opacity="0" data-swiper-parallax-scale="0.8">
+                                            <div class="mil-top mil-mb-20-plus">
+                                                <div class="mil-user">
+                                                    <img src="{% static 'img/img-light/ui/user-1.jpg' %}" alt="user">
+                                                </div>
+                                                <div>
+                                                    <h3 class="mil-mb-10">پاول ترومن</h3>
+                                                    <div class="mil-link">مدیر هنری</div>
+                                                </div>
+                                            </div>
+                                            <p>همکاری با وندی روی برند ما تجربه‌ای فوق‌العاده بود. او به ایده‌های ما گوش
+                                                داد و هویتی بصری خلق کرد که کاملاً با دیدگاه ما همخوانی داشت. توجه او به
+                                                جزئیات و خلاقیت واقعاً ما را تحت تأثیر قرار داد. از نتیجه بسیار راضی
+                                                هستم و او را برای هر پروژه برندینگ توصیه می‌کنم.</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="mil-review-card" data-swiper-parallax="-90"
+                                             data-swiper-parallax-opacity="0" data-swiper-parallax-scale="0.8">
+                                            <div class="mil-top mil-mb-20-plus">
+                                                <div class="mil-user">
+                                                    <img src="assets/img/img-light/ui/user-2.jpg" alt="user">
+                                                </div>
+                                                <div>
+                                                    <h3 class="mil-mb-10">اما فریمن</h3>
+                                                    <div class="mil-link">مدیر هنری</div>
+                                                </div>
+                                            </div>
+                                            <p>وندی وب‌سایت شرکت ما را توسعه داد و نتیجه فوق‌العاده بود. او اطمینان حاصل
+                                                کرد که سایت عملکردی، مدرن و در تمامی دستگاه‌ها واکنش‌گرا باشد. تخصص فنی
+                                                او همراه با ورودی خلاقانه روند کار را بسیار روان کرد. ما از محصول نهایی
+                                                بسیار خوشحال هستیم و از زحمات او سپاسگزاریم.</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="mil-review-card" data-swiper-parallax="-90"
+                                             data-swiper-parallax-opacity="0" data-swiper-parallax-scale="0.8">
+                                            <div class="mil-top mil-mb-20-plus">
+                                                <div class="mil-user">
+                                                    <img src="assets/img/img-light/ui/user-3.jpg" alt="user">
+                                                </div>
+                                                <div>
+                                                    <h3 class="mil-mb-10">اسکار نیومن</h3>
+                                                    <div class="mil-link">مدیر هنری</div>
+                                                </div>
+                                            </div>
+                                            <p>وندی رابط کاربری اپلیکیشن موبایل ما را طراحی کرد و نتیجه شگفت‌انگیز شد.
+                                                رابط کاربری جذاب و شهودی است و اپلیکیشن را کاربردی و لذت‌بخش کرده است.
+                                                توجه وندی به تجربه کاربری و جزئیات طراحی تفاوت بزرگی ایجاد کرد. من از
+                                                نتایج بسیار راضی هستم!</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="mil-review-card" data-swiper-parallax="-90"
+                                             data-swiper-parallax-opacity="0" data-swiper-parallax-scale="0.8">
+                                            <div class="mil-top mil-mb-20-plus">
+                                                <div class="mil-user">
+                                                    <img src="assets/img/img-light/ui/user-4.jpg" alt="user">
+                                                </div>
+                                                <div>
+                                                    <h3 class="mil-mb-10">ویکتوریا اولدمن</h3>
+                                                    <div class="mil-link">مدیر هنری</div>
+                                                </div>
+                                            </div>
+                                            <p>همکاری با وندی به‌عنوان مدیر خلاق تجربه‌ای عالی بود. او ایده‌های تازه‌ای
+                                                ارائه کرد و به ما کمک کرد مفاهیم خود را به واقعیت تبدیل کنیم. جهت‌دهی او
+                                                واضح بود و طراحی نهایی فراتر از انتظارات ما بود. دیدگاه خلاقانه وندی
+                                                واقعاً به پروژه ما ارزش افزود!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mil-jcb mil-aic mil-mb-90 mil-up">
+                                <div class="mil-reviews-pagination"></div>
+                                <div class="mil-slider-nav mil-type-2">
+                                    <div class="mil-slider-btn mil-review-prev">
+                                        <div class="mil-arrow-btn">
+                                            <i class="fal fa-arrow-right"></i>
+                                        </div>
+                                    </div>
+                                    <div class="mil-slider-btn mil-review-next">
+                                        <div class="mil-arrow-btn">
+                                            <i class="fal fa-arrow-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mil-title-line mil-mb-60 mil-up">
+                                <h2>تحصیلات</h2>
+                                <div class="mil-line"></div>
+                                <div class="mil-h2 mil-number">05</div>
+                            </div>
+                            <ul class="mil-timeline mil-mb-75">
+                                <li class="mil-mb-15 mil-up">
+                                    <div class="mil-timeline-card">
+                                        <div class="mil-left">
+                                            <h3 class="mil-line-height mil-mb-20"><span class="mil-accent">01.</span>
+                                                مدرسه هنر</h3>
+                                            <div class="mil-badge mil-dark mil-mb-20-plus">۱۳۸۵ - ۱۳۸۷</div>
+                                        </div>
+                                        <div class="mil-right">
+                                            <p class="">حداقل‌ها را حذف کنید و وقفه‌های موقت را کاهش دهید.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="mil-mb-15 mil-up">
+                                    <div class="mil-timeline-card">
+                                        <div class="mil-left">
+                                            <h3 class="mil-line-height mil-mb-20"><span class="mil-accent">02.</span>
+                                                آکادمی هنرهای لویو</h3>
+                                            <div class="mil-badge mil-dark mil-mb-20-plus">۱۳۸۷ - ۱۳۹۲</div>
+                                            <a href="assets/img/certificate-1.jpg" class="mil-link mil-hover-link"
+                                               data-fancybox="certificate" data-no-swup>گواهینامه</a>
+                                        </div>
+                                        <div class="mil-right">
+                                            <p class="">ایجاد تجربه‌های بهتر با کاهش مشکلات و بهبود ارتباطات کارآمد. این
+                                                متن به عنوان نمونه استفاده شده است.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="mil-mb-15 mil-up">
+                                    <div class="mil-timeline-card">
+                                        <div class="mil-left">
+                                            <h3 class="mil-line-height mil-mb-20"><span class="mil-accent">03.</span>
+                                                دوره‌های ال تم</h3>
+                                            <div class="mil-badge mil-dark mil-mb-20-plus">۱۳۹۳ - ۱۳۹۴</div>
+                                            <a href="assets/img/certificate-2.jpg" class="mil-link mil-hover-link"
+                                               data-fancybox="certificate" data-no-swup>گواهینامه</a>
+                                        </div>
+                                        <div class="mil-right">
+                                            <p class="">لورم ایپسوم متن ساختگی با تولید سادگی از صنعت چاپ. این متن به
+                                                عنوان نمونه برای طراحی‌ها و نمونه‌کارها استفاده می‌شود.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="mil-title-line mil-mb-60 mil-up">
+                                <h2>کار</h2>
+                                <div class="mil-line"></div>
+                                <div class="mil-h2 mil-number">06</div>
+                            </div>
+                            <ul class="mil-timeline mil-mb-75">
+                                <li class="mil-mb-15 mil-up">
+                                    <div class="mil-timeline-card">
+                                        <div class="mil-left">
+                                            <h3 class="mil-line-height mil-mb-20"><span class="mil-accent">01.</span>
+                                                آژانس خلاق پیکسی</h3>
+                                            <div class="mil-badge mil-dark mil-mb-20-plus">۱۳۹۵ - ۱۳۹۶</div>
+                                        </div>
+                                        <div class="mil-right">
+                                            <p class="">حداقل‌ها را حذف کنید و وقفه‌های موقت را کاهش دهید. مشکلات کوچک
+                                                را مدیریت کنید و بهره‌وری را افزایش دهید.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="mil-mb-15 mil-up">
+                                    <div class="mil-timeline-card">
+                                        <div class="mil-left">
+                                            <h3 class="mil-line-height mil-mb-20"><span class="mil-accent">02.</span>
+                                                استودیوی هنر اشلی</h3>
+                                            <div class="mil-badge mil-dark mil-mb-20-plus">۱۳۹۶ - ۱۳۹۸</div>
+                                        </div>
+                                        <div class="mil-right">
+                                            <p class="">ایجاد تجربه‌های بهتر با کاهش مشکلات و بهبود ارتباطات کارآمد. این
+                                                متن به عنوان نمونه استفاده شده است.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="mil-mb-15 mil-up">
+                                    <div class="mil-timeline-card">
+                                        <div class="mil-left">
+                                            <h3 class="mil-line-height mil-mb-20-plus"><span
+                                                    class="mil-accent">03.</span> تم‌فارست</h3>
+                                            <div class="mil-badge mil-dark mil-mb-20">۱۳۹۸ - امروز</div>
+                                        </div>
+                                        <div class="mil-right">
+                                            <p class="">توضیحات مختصر درباره مشکلات و راه‌حل‌ها با نگاه به اهداف
+                                                بزرگتر.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="mil-title-line mil-mb-60 mil-up">
+                                <h2>قیمت</h2>
+                                <div class="mil-line"></div>
+                                <div class="mil-h2 mil-number">07</div>
+                            </div>
+                            <div class="row mil-mb-75">
+                                <div class="col-sm-6">
+                                    <div class="mil-price-card mil-mb-15 mil-up">
+                                        <div class="mil-link mil-true mil-mb-15">پرداخت ساعتی</div>
+                                        <div class="mil-price-number mil-mb-10">
+                                            <span class="mil-main mil-accent">19</span>
+                                            <span class="mil-symbol mil-accent">تومان</span>
+                                            <span>/ساعتی</span>
+                                        </div>
+                                        <p class="mil-mb-30">دسترس‌پذیری در زمان از پیش تعیین‌شده</p>
+                                        <ul class="mil-mb-30">
+                                            <li>طراحی رابط کاربری (UI)</li>
+                                            <li>طراحی تجربه کاربری (UX)</li>
+                                            <li>نمونه‌سازی و وایرفریم‌سازی</li>
+                                            <li>توسعه وب‌سایت و اپلیکیشن</li>
+                                        </ul>
+                                        <a href="contact-light.html" class="mil-link mil-hover-link mil-accent">انتخاب
+                                            پلن</a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="mil-price-card mil-mb-15 mil-up">
+                                        <div class="mil-link mil-true mil-mb-15">پرداخت ساعتی</div>
+                                        <div class="mil-price-number mil-mb-10">
+                                            <span class="mil-main mil-accent">2900</span>
+                                            <span class="mil-symbol mil-accent">تومان</span>
+                                            <span>/ماهانه</span>
+                                        </div>
+                                        <p class="mil-mb-30">در دسترس بودن کامل ۸ ساعت در روز</p>
+                                        <ul class="mil-mb-30">
+                                            <li>طراحی رابط کاربری (UI)</li>
+                                            <li>طراحی تجربه کاربری (UX)</li>
+                                            <li>نمونه‌سازی و وایرفریم‌سازی</li>
+                                            <li>توسعه وب‌سایت و اپلیکیشن</li>
+                                            <li>نگهداری و به‌روزرسانی وب‌سایت</li>
+                                        </ul>
+                                        <a href="contact-light.html" class="mil-link mil-hover-link mil-accent">انتخاب
+                                            پلن</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mil-divider mil-mb-60 mil-up"></div>
+                            <p class="mil-mb-30 mil-up">از توجه شما بسیار متشکرم ❤️! من را در شبکه‌های اجتماعی دنبال
+                                کنید و فراموش نکنید که هر روز از وب‌سایتم بازدید کنید. <a href="blog-fw-light.html"
+                                                                                          class="mil-text-link mil-accent">در
+                                    وبلاگم</a> من مطالب جالب زیادی در مورد طراحی و موضوعات دیگر پست می‌کنم.</p>
+                            <ul class="mil-social mil-up">
+                                <li><a href="" target="_blank" data-no-swup><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="" target="_blank" data-no-swup><i class="fab fa-behance"></i></a></li>
+                                <li><a href="" target="_blank" data-no-swup><i class="fab fa-dribbble"></i></a></li>
+                                <li><a href="" target="_blank" data-no-swup><i class="fab fa-pinterest-p"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <footer>
+                        <div class="mil-space-90 mil-jcb">
+                            <p>©۱۴۰۳. کلیه حقوق محفوظ است.</p>
+                            <p>طراحی شده توسط: <a href="https://eltheme.ir" class="mil-text-link" data-no-swup
+                                                  target="_blank">ال تم</a></p>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+            <!-- cv end -->
+        </div>
+    </div>
+{% endblock %}
+

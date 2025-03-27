@@ -1,8 +1,8 @@
 from django.db import models
 
 
-class Customer(models.Model):
-    fullname = models.CharField(max_length=50, verbose_name="full name")
+class Message(models.Model):
+    fullname = models.CharField(max_length=60, verbose_name="full name")
     email = models.EmailField(unique=True, verbose_name="email address")
     subject = models.CharField(max_length=250, verbose_name="subject")
     description = models.TextField(verbose_name="description")
