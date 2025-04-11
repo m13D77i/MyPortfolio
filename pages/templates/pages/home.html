@@ -1,8 +1,11 @@
 {% extends "_base.html" %}
 {% load static %}
+{% load i18n %}
+
 {% block title %}
-	Home page
+	{% trans 'home page' %}
 {% endblock %}
+{% block class %}class="mil-fw-page"{% endblock %}
 {% block content %}
     <div class="mil-content">
         <div class="mil-overlay"></div>
@@ -29,7 +32,7 @@
                                 <div class="mil-avatar mil-mb-30">
                                     <img src="{% static 'img/img-light/ui/avatar.jpg' %}" alt="avatar">
                                 </div>
-                                <h1 class="mil-mb-15">محمد درویشی ایوری</h1>
+                                <h1 class="mil-mb-15">{% trans 'mohammad Darvishi ' %}</h1>
                                 <div class="mil-link">من یک <span class="mil-typing">طراح</span></div>
                             </div>
                         </div>

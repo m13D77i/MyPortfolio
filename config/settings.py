@@ -120,7 +120,7 @@ USE_I18N = True
 USE_L10N = True
 USE_TZ = True
 
-LOCALE_PATHS = [BASE_DIR / "locale"]
+LOCALE_PATHS = (BASE_DIR / "locale",)
 
 
 # Static files (CSS, JavaScript, Images)

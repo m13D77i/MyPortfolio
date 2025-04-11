@@ -1,5 +1,5 @@
 {% load static %}
-
+{% load i18n %}
 <!DOCTYPE html>
 <html lang="fa" dir="rtl" class="light">
 <head>
@@ -26,11 +26,11 @@
     <!-- page title -->
     <title>{% block title %}{% endblock %}</title>
 </head>
-<body class="mil-fw-page">
+<body {% block class %}{% endblock %}>
     <div class="mil-frame-wrapper">
         <div class="mil-preloader">
             <div class="mil-preloader-content">
-                <h1 class="mil-mb-30"><span class="mil-h3">در حال بارگذاری:</span> <span
+                <h1 class="mil-mb-30"><span class="mil-h3">{% trans 'loading' %}:</span> <span
                         class="mil-accent mil-percent">95</span> <span class="mil-h3">%</span></h1>
                 <div class="mil-preload-track">
                     <div class="mil-preload-line"></div>
@@ -48,12 +48,12 @@
                     <nav class="mil-main-menu">
                         <ul id="swupMenu">
                             <li class="mil-current"><a href="{% url 'home' %}"><i
-                                    class="fal fa-home"></i><span>خانه</span></a></li>
-                            <li><a href="#"><i class="fal fa-palette"></i><span>نمونه‌کارها</span></a>
+                                    class="fal fa-home"></i><span>{% trans 'home' %}</span></a></li>
+                            <li><a href="#"><i class="fal fa-palette"></i><span>{% trans 'projects' %}</span></a>
                             </li>
-                            <li><a href="{% url 'contact' %}"><i class="fal fa-envelope"></i><span>تماس</span></a></li>
-                            <li><a href="#"><i class="fal fa-book"></i><span>بلاگ</span></a></li>
-                            <li><a href="cv.txt" download data-no-swup><i class="fal fa-file-download"></i><span>دانلود رزومه</span></a>
+                            <li><a href="{% url 'contact' %}"><i class="fal fa-envelope"></i><span>{% trans 'contact' %}</span></a></li>
+                            <li><a href="#"><i class="fal fa-book"></i><span>{% trans 'blog' %}</span></a></li>
+                            <li><a href="cv.txt" download data-no-swup><i class="fal fa-file-download"></i><span>{% trans 'resume' %}</span></a>
                             </li>
                         </ul>
                     </nav>
