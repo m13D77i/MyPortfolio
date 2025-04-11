@@ -1,0 +1,56 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-11 14:15+0330\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: .\pages\templates\pages\contact.html:6
+
+msgid "contact me"
+msgstr "ارتباط با من"
+
+#: .\pages\templates\pages\home.html:6
+msgid "home page"
+msgstr "خانه"
+
+#: .\pages\templates\pages\home.html:35
+msgid "mohammad Darvishi "
+msgstr "محمد درویشی"
+
+#: .\templates\_base.html:33
+msgid "loading"
+msgstr "درحال بارگذاری"
+
+#: .\templates\_base.html:51
+msgid "home"
+msgstr "خانه"
+
+#: .\templates\_base.html:52
+msgid "projects"
+msgstr "نمونه کارها"
+
+#: .\templates\_base.html:54
+msgid "contact"
+msgstr "ارتباط با من"
+
+#: .\templates\_base.html:55
+msgid "blog"
+msgstr "وبلاگ"
+
+#: .\templates\_base.html:56
+msgid "resume"
+msgstr "رزومه"
