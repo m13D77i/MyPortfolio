@@ -42,9 +42,16 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    # third party
+    "crispy_bootstrap5",
+    "crispy_forms",
+
     # my local apps
     "accounts.apps.AccountsConfig",
     'pages.apps.PagesConfig',
+    'projects.apps.ProjectsConfig',
+
+
 ]
 
 MIDDLEWARE = [
@@ -136,3 +143,7 @@ STATICFILES_DIRS = [BASE_DIR / "static"]
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = "accounts.CustomUser"
+
+# crispy config
+CRISPY_TEMPLATE_PACK = 'bootstrap5'
+CRISPY_ALLOWED_TEMPLATE_PACK = 'bootstrap5'

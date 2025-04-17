@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-11 14:15+0330\n"
+"POT-Creation-Date: 2025-04-17 21:45+0330\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,10 +18,33 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: .\pages\templates\pages\contact.html:6
+#: .\pages\models.py:5
+msgid "full name"
+msgstr "نام و نام خانوادگی"
 
+#: .\pages\models.py:6
+msgid "email address"
+msgstr "ادرس ایمیل"
+
+#: .\pages\models.py:7
+msgid "subject"
+msgstr "موضوع"
+
+#: .\pages\models.py:8
+msgid "description"
+msgstr "توضیحات"
+
+#: .\pages\models.py:9
+msgid "datatime created"
+msgstr "زمان پیام "
+
+#: .\pages\templates\pages\contact.html:6
 msgid "contact me"
 msgstr "ارتباط با من"
+
+#: .\pages\templates\pages\contact.html:63
+msgid "send"
+msgstr "ارسال"
 
 #: .\pages\templates\pages\home.html:6
 msgid "home page"
@@ -54,3 +77,14 @@ msgstr "وبلاگ"
 #: .\templates\_base.html:56
 msgid "resume"
 msgstr "رزومه"
+
+#, fuzzy
+#~| msgid "full name"
+#~ msgid "name"
+#~ msgstr "نام و نام خانوادگی"
+
+#~ msgid "email"
+#~ msgstr "ایمیل"
+
+#~ msgid "message"
+#~ msgstr "پیام"
